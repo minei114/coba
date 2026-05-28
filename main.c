@@ -5,6 +5,8 @@
 #include "exit_cmd.h"
 #include "f10.h"
 #include "history_view.h"
+#include "cmd_pages.h"
+#include "utils.h"
 
 int main() {
     Browser b;
