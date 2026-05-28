@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types.h"
 
-int lcgRand(int max) {
-    return rand() % max;
-}
+#include "types.h"
+#include "utils.h"
 
 void cmdDiscover(WebPage pages[], int size) {
     int indices[MAX_WEB_PAGES], total = 0;
