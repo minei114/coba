@@ -10,7 +10,7 @@ int main() {
     Browser b;
     // Inisialisasi semua ADT dari sumber
     setInit(&b.pages);            // [13]
-    mapInit(&b.cache, 10);        // [14]
+    mapInit(&b.cache);        // [14]
     graphInit(&b.graph);          // [15]
     tabArrayInit(&b.tabs);        // [16]
     createQueue(&b.downloadQueue);// [17]
