@@ -21,8 +21,3 @@ void cmdTick(Browser *b) {
 void cmdShowQueue(Browser *b) {
     printQueue(&b->downloadQueue);
 }
-
-/* Rumus Tick: (length(URL) / 5) + 2 [9] */
-int calculateTicks(const char *url) {
-    return (strlen(url) / 5) + 2;
-}
