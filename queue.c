@@ -44,3 +44,6 @@ int tickQueue(Queue *q) {
     }
     return 1;
 }
+boolean isQueueEmpty(DownloadQueue *q) {
+    return q->size == 0;
+}
