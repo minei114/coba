@@ -20,7 +20,7 @@ void graphDisplayLinkedPages(Graph* G, int src_id, WebPageSet* database) {
     while (curr != NULL) {
         WebPage* wp = setSearchById(database, curr->target_id);
         if (wp != NULL && wp->active) {
-            printf("[%d] %s\n", count++, wp->url); [4, 5]
+            printf("[%d] %s\n", count++, wp->url);
         }
         curr = curr->next;
     }
