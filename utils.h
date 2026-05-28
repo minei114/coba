@@ -4,6 +4,6 @@
 
 void lcgSetSeed(unsigned int seed);
 unsigned int lcgRand(unsigned int max);
-int binarySearchURL(WebPage pages[], int size, const char* target); // Wajib STI
-int strCmp(const char *a, const char *b);
+int startsWith(const char *str, const char *prefix);
+int binarySearchURL(WebPage pages[], int size, const char* target);
 #endif
