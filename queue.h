@@ -17,5 +17,7 @@ typedef struct {
 
 void createQueue(Queue *q);
 int enqueue(Queue *q, const char *url);
+boolean isQueueEmpty(Queue *q);
+void printQueue(Queue *q);
 int tickQueue(Queue *q); /* Memproses waktu download [10] */
 #endif
