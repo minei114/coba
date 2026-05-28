@@ -8,6 +8,8 @@ typedef struct {
     int     nextId;
 } WebPageSet;
 
+boolean setInsert(WebPageSet *s, const char *url, const char *content);
+void setDelete(WebPageSet *s, const char *url);
 void setInit(WebPageSet *s);
 WebPage *setSearch(WebPageSet *s, const char *url);
 #endif
