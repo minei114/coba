@@ -1,3 +1,5 @@
+#include "types.h"
+
 void cmdDiscover(WebPage pages[], int size) {
     int indices[MAX_WEB_PAGES], total = 0;
     for (int i = 0; i < MAX_WEB_PAGES; i++) {
