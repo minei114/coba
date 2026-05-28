@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "utils.h"
+#include "utils.h"
+#include "adt_set.h"
+#include "adt_map.h"
 
 /* F05 - Tambah Halaman Baru */
 void cmdAddPage(Browser *b, const char *url) {
