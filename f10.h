@@ -4,8 +4,8 @@
 #include "browser.h"
 
 /* Perintah untuk mengelola antrean download (F10) */
-void cmdDownload(BrowserState *bs, const char *url);
-void cmdTick(BrowserState *bs);
-void cmdShowQueue(BrowserState *bs);
+void cmdDownload(Browser *b, const char *url);
+void cmdTick(Browser *b);
+void cmdShowQueue(Browser *b);
 
 #endif
