@@ -1,5 +1,6 @@
 #include "history_view.h"
 #include <stdio.h>
+#include <string.h>
 
 void displayTabHistory(Navigation N) {
     if (N.idxTop == IDX_UNDEF) {
