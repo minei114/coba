@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 void graphInit(Graph* G) {
-    for (int i = 0; i <= MAX_WEB_PAGES; i++) G->adjList[i] = NULL; [3]
+    for (int i = 0; i <= MAX_WEB_PAGES; i++) G->adjList[i] = NULL;
 }
 
 void graphAddEdge(Graph* G, int src_id, int dest_id) {
