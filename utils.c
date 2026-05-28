@@ -16,7 +16,7 @@ unsigned int lcgRand(unsigned int max) {
 /* E01: Validasi URL Manual (Regex: ^(?!-)[A-Za-z0-9-]{1,63}(?<!-)(\.[A-Za-z]{2,})+) [5] */
 int isValidURL(const char *url) {
     int len = strlen(url);
-    if (len == 0 || url == '-' || url[len-1] == '-') return 0;
+    if (len == 0 || url[0] == '-' || url[len-1] == '-') return 0;
 
     int dotCount = 0;
     for (int i = 0; i < len; i++) {
