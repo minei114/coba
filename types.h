@@ -7,6 +7,11 @@
 #define CACHE_MAX_AMOUNT    10
 #define TRUE  1
 #define FALSE 0
+#define TAB_HISTORY_MAX 100
+#define TABS_MAX_AMOUNT 10
+#define DOWNLOAD_MAX_AMOUNT 20
+#define MAX_STR_LEN 256
+#define IDX_UNDEF -1
 
 typedef int boolean;
 
