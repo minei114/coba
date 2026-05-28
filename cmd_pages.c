@@ -1,7 +1,6 @@
 #include "browser.h"
 #include <stdio.h>
 #include <string.h>
-#include "cmd_pages.h"
 #include "utils.h"
 
 /* F05 - Tambah Halaman Baru */
