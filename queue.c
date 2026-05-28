@@ -47,3 +47,15 @@ int tickQueue(Queue *q) {
 boolean isQueueEmpty(DownloadQueue *q) {
     return q->size == 0;
 }
+void printQueue(DownloadQueue *q) {
+    if (q->size == 0) {
+        printf("Queue kosong\n");
+        return;
+    }
+
+    int i = q->head;
+    for (int count = 0; count < q->size; count++) {
+        printf("%s\n", q->data[i].url);
+        i = (i + 1) % DOWNLOAD_MAX_AMOUNT;
+    }
+}
