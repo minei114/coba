@@ -9,6 +9,6 @@ void cmdExit(Browser *b) {
     printf("          S H A C K           \n");
     printf("        B R O W S E R         \n");
     printf("=================================\n" COLOR_RESET);
-    printf("Mematikan ShackBrowser...\n"); [14, 15]
+    printf("Mematikan ShackBrowser...\n");
     b->running = FALSE;
 }
