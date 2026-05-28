@@ -94,12 +94,13 @@ Tab* tabGetCurrent(TabArray *ta) {
     return &ta->tabs[ta->currentTab];
 }
 
-void tabPushHistory(TabArray *ta, char *url) {
-
+int tabPushHistory(TabArray *ta, const char *url) {
     pushNewPage(
         &ta->tabs[ta->currentTab].nav,
         url
     );
+
+    return 1;
 }
 
 void tabPrint(TabArray *ta) {
