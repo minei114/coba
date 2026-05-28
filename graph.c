@@ -18,9 +18,9 @@ void graphDisplayLinkedPages(Graph* G, int src_id, WebPageSet* database) {
     Node* curr = G->adjList[src_id];
     int count = 1;
     while (curr != NULL) {
-        WebPage* wp = setSearchById(database, curr->target_id);
+        //WebPage* wp = setSearchById(database, curr->target_id);
         if (wp != NULL && wp->active) {
-            printf("[%d] %s\n", count++, wp->url);
+            //printf("[%d] %s\n", count++, wp->url);
         }
         curr = curr->next;
     }
