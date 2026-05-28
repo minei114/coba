@@ -13,7 +13,7 @@ void cmdAddPage(Browser *b, const char *url) {
     }
 
     printf("Masukkan konten (Akhiri dengan titik '.' di baris baru):\n");
-    content = '\0';
+    content[0] = '\0';
     while (1) {
         printf(">>> ");
         if (fgets(line, sizeof(line), stdin) == NULL) break;
