@@ -28,3 +28,12 @@ boolean setInsert(WebPageSet *s, char *url, char *content) {
     }
     return FALSE;
 }
+void setDelete(WebPageSet *s, char *url) {
+    for (int i = 0; i < MAX_WEB_PAGES; i++) {
+        if (s->pages[i].active &&
+            strcmp(s->pages[i].url, url) == 0) {
+
+            s->pages[i].active = FALSE;
+        }
+    }
+}
