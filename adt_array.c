@@ -9,9 +9,9 @@ void tabArrayInit(TabArray *ta) {
     for (int i = 0; i < TABS_MAX_AMOUNT; i++) ta->tabs[i].active = FALSE;
     
     // Inisialisasi TAB1 default [9]
-    ta->tabs.active = TRUE;
-    strcpy(ta->tabs.name, "TAB1");
-    CreateNav(&ta->tabs.nav);
+    ta->tabs[0].active = TRUE;
+    strcpy(ta->tabs[0].name, "TAB1");
+    CreateNav(&ta->tabs[0].nav);
 }
 
 int tabAdd(TabArray *ta) {
