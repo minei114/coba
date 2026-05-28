@@ -37,3 +37,11 @@ void mapPut(CacheMap *m, const char *key, const char *value) {
     strncpy(m->entries[idx].key, key, MAX_URL_LEN);
     strncpy(m->entries[idx].value, value, MAX_CONTENT_LEN);
 }
+void mapRemove(CacheMap *m, char *url) {
+    for (int i = 0; i < CACHE_MAX_AMOUNT; i++) {
+        if (strcmp(m->entries[i].url, url) == 0) {
+            m->entries[i].url[0] = '\0';
+            m->entries[i].content[0] = '\0';
+        }
+    }
+}
