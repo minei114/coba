@@ -11,7 +11,7 @@ void graphAddEdge(Graph* G, int src_id, int dest_id) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->target_id = dest_id;
     newNode->next = G->adjList[src_id];
-    G->adjList[src_id] = newNode; [3]
+    G->adjList[src_id] = newNode;
 }
 
 void graphDisplayLinkedPages(Graph* G, int src_id, WebPageSet* database) {
