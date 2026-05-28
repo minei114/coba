@@ -25,7 +25,7 @@ int main() {
         printf("\n[%s] > ", tabGetCurrent(&b.tabs)->name); // [19]
         if (fgets(input, sizeof(input), stdin) == NULL) break;
         
-        arg = '\0';
+        arg[0] = '\0';
         if (sscanf(input, "%s %[^\n]", cmd, arg) < 1) continue;
 
         if (strcmp(cmd, "DISCOVER") == 0) {
