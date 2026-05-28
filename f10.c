@@ -2,6 +2,7 @@
 #include "queue.h"
 #include <stdio.h>
 #include <string.h>
+#include "queue.h"
 
 void cmdDownload(Browser *b, const char *url) {
     if (!enqueue(&b->downloadQueue, url)) {
