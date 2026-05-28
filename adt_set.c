@@ -15,3 +15,16 @@ WebPage *setSearch(WebPageSet *s, const char *url) {
     }
     return NULL;
 }
+boolean setInsert(WebPageSet *s, char *url, char *content) {
+    for (int i = 0; i < MAX_WEB_PAGES; i++) {
+        if (!s->pages[i].active) {
+            s->pages[i].id = i;
+            strcpy(s->pages[i].url, url);
+            strcpy(s->pages[i].content, content);
+            s->pages[i].view_count = 0;
+            s->pages[i].active = TRUE;
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
