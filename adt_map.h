@@ -16,6 +16,7 @@ typedef struct {
 } CacheMap;
 
 void mapInit(CacheMap *m);
+void mapRemove(CacheMap *m, const char *url);
 void mapPut(CacheMap *m, const char *key, const char *value);
 char *mapGet(CacheMap *m, const char *key);
 #endif
